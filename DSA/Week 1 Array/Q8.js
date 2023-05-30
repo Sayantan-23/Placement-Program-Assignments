@@ -18,7 +18,6 @@ const findErrorNums = (nums) => {
     countMap.set(num, (countMap.get(num) || 0) + 1);
   }
 
-  // Find the duplicate and missing numbers
   for (let i = 1; i <= n; i++) {
     const count = countMap.get(i) || 0;
     if (count === 2) {

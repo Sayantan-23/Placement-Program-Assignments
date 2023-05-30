@@ -6,14 +6,13 @@
 // Output: true
 
 const containsDuplicate = (nums) => {
-
-  const set = new Set()
+  const set = new Set();
 
   for (let i of nums) {
     if (set.has(i)) {
-      return true
+      return true;
     }
-    set.add(i)
+    set.add(i);
   }
-  return false
-}
+  return false;
+};
