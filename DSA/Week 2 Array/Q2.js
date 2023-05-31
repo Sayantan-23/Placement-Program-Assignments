@@ -11,3 +11,11 @@
 
 // Explanation: Alice can only eat 6 / 2 = 3 candies. Since there are only 3 types, she can eat one of each type.
 
+const distributeCandies = (candyType) => {
+  const maxType = candyType.length/2
+  const set = new Set(candyType);
+
+  return Math.min(maxType, set.size)
+};
+
+console.log(distributeCandies([1, 1, 2, 2, 3, 3]));
