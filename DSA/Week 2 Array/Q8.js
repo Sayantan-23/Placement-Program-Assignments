@@ -12,7 +12,7 @@
 
 // Explanation: The score is max(nums) - min(nums) = 1 - 1 = 0.
 
-const smallestRangeI = (nums, k) => {
+const smallestRange = (nums, k) => {
   const n = nums.length;
   nums.sort((a, b) => a - b);
 
@@ -25,3 +25,9 @@ const smallestRangeI = (nums, k) => {
     return maxPossible - minPossible;
   }
 };
+
+const nums = [1];
+const k = 0;
+const minScore = smallestRange(nums, k);
+console.log(minScore);
+// Output: 0

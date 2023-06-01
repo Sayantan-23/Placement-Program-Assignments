@@ -12,17 +12,15 @@
 
 // Explanation: The longest harmonious subsequence is [3,2,2,2,3]
 
-
-
 const findLHS = (nums) => {
   let countMap = new Map();
-  
+
   for (let num of nums) {
     countMap.set(num, (countMap.get(num) || 0) + 1);
   }
-  
+
   let maxLength = 0;
-  
+
   for (let num of countMap.keys()) {
     if (countMap.has(num + 1)) {
       const length = countMap.get(num) + countMap.get(num + 1);
@@ -31,8 +29,7 @@ const findLHS = (nums) => {
   }
   
   return maxLength;
-}
-
+};
 
 const nums = [1, 3, 2, 2, 5, 2, 3, 7];
 const maxLength = findLHS(nums);
