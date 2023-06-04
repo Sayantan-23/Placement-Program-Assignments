@@ -35,9 +35,9 @@ const findMissingRanges = (nums, lower, upper) => {
   return missingRanges;
 };
 
-function getRange(start, end) {
+const getRange = (start, end) => {
   return start === end ? [start] : [start, end];
-}
+};
 
 const nums = [0, 1, 3, 50, 75];
 const lower = 0;

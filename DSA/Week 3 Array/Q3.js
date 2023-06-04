@@ -54,19 +54,19 @@ const nextPermutation = (nums) => {
   reverse(nums, pivotIndex + 1, n - 1);
 };
 
-function swap(nums, i, j) {
+const swap = (nums, i, j) => {
   const temp = nums[i];
   nums[i] = nums[j];
   nums[j] = temp;
-}
+};
 
-function reverse(nums, start, end) {
+const reverse = (nums, start, end) => {
   while (start < end) {
     swap(nums, start, end);
     start++;
     end--;
   }
-}
+};
 
 const nums = [1, 2, 3];
 nextPermutation(nums);
