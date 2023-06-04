@@ -23,3 +23,4 @@ const moveZeroes = (nums) => {
 };
 
 console.log(moveZeroes([0, 0, 1]));
+// Output: [ 1, 0, 0 ]
