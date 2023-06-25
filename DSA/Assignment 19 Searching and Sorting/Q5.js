@@ -8,3 +8,46 @@
 // Input:  arr[] = {-5, -2, 5, 2, 4, 7, 1, 8, 0, -8}
 // Output: arr[] = {-5, 5, -2, 2, -8, 4, 7, 1, 8, 0}
 
+const alternateArrange = (arr) => {
+  let positive = [];
+  let negative = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] >= 0) {
+      positive.push(arr[i]);
+    } else {
+      negative.push(arr[i]);
+    }
+  }
+
+  let result = [];
+  let pIndex = 0;
+  let nIndex = 0;
+
+  while (pIndex < positive.length && nIndex < negative.length) {
+    result.push(negative[nIndex]);
+    result.push(positive[pIndex]);
+    nIndex++;
+    pIndex++;
+  }
+
+  while (pIndex < positive.length) {
+    result.push(positive[pIndex]);
+    pIndex++;
+  }
+
+  while (nIndex < negative.length) {
+    result.push(negative[nIndex]);
+    nIndex++;
+  }
+
+  return result;
+};
+
+let arr1 = [1, 2, 3, -4, -1, 4];
+console.log(alternateArrange(arr1));
+// Output: [-4, 1, -1, 2, 3, 4]
+
+let arr2 = [-5, -2, 5, 2, 4, 7, 1, 8, 0, -8];
+console.log(alternateArrange(arr2));
+// Output: [-5, 5, -2, 2, -8, 4, 7, 1, 8, 0]
