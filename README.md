@@ -40,6 +40,10 @@
 
 ### DSA Assignment 19 Answers - *[Here](./DSA/Assignment%2019%20Searching%20and%20Sorting/)*
 
+### DSA Assignment 20 Answers - *[Here](./DSA/Assignment%2020%20Tree/)*
+
+### DSA Assignment 21 Answers - *[Here](./DSA/Assignment%2021%20Tree/)*
+
 ## Mock Test
 
 ### 4th June Mock Test Answers - *[Here](./Mock%20Tests/Test%204th%20June/)*
