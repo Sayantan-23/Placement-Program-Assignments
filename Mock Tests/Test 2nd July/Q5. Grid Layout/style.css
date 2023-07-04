@@ -1,0 +1,10 @@
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: auto;
+}
