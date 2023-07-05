@@ -49,3 +49,5 @@
 ### 4th June Mock Test Answers - *[Here](./Mock%20Tests/Test%204th%20June/)*
 
 ### 25th June Mock Test Answers - *[Here](./Mock%20Tests/Test%2025th%20June/)*
+
+### 2nd July Mock Test Answers - *[Here](./Mock%20Tests/Test%202nd%20July/)*
