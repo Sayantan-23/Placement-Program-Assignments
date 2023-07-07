@@ -1,3 +1,5 @@
+# Assignment 2
+
 **Q.1 What is Box Model in CSS & Which CSS Properties are part of it?**
 
 <u>_Answer -_</u> CSS Box Model is a set of rules that determines how the browser's rendering engine renders the HTML elements of our web page. The web browser renders every element as a rectangular box according to the CSS Box Model. CSS determines the size, position and other properties of these boxes.
